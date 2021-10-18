@@ -10,10 +10,10 @@ class SQRServiceTest {
 
     @ParameterizedTest
     @CsvSource(value = {"200, 300, 3",
-            "400, 500, 10"})
+            "400, 500, 3"})
     void shouldDisplaySquareRootAmount(int start, int finish, int expected) {
         SQRService service = new SQRService();
-        int actual = service.SquareRootAmount( start, finish);
+        int actual = service.squareRootAmount( start, finish);
         assertEquals(expected, actual);
     }
 }
